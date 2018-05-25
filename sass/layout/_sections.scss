@@ -1,0 +1,24 @@
+.aboutMe{
+    height: 100vh;
+    width: 100%;
+    //background-color:black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__p-container{
+        font-family: font2;
+        width: 60%;
+        font-size: 3rem;
+        //text-align: center;
+    }
+}          
+
+.typed-cursor {
+    color:azure;
+    font-size: 3rem;
+    animation-name: blink;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.95, 0.05, 0.795, 0.035) ;
+    font-family: 'Courier New', Courier, monospace;
+    
+  } 

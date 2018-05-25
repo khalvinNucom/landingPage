@@ -1,0 +1,95 @@
+html {
+  font-size: 62.5%; }
+
+body {
+  background-color: #24292e;
+  background-image: url("../../assets/img/star-bg.png");
+  background-size: cover;
+  background-position: bottom;
+  color: #f8f8f8; }
+
+p, h1, h2, h3, h4, h5 {
+  padding: 0;
+  margin: 0; }
+
+@font-face {
+  font-family: dryBrush;
+  src: url(../../assets/fonts/DryBrush.ttf); }
+
+@font-face {
+  font-family: font2;
+  src: url(../../assets/fonts/IndieFlower.ttf); }
+
+.mainHeader {
+  display: block;
+  height: 100vh;
+  width: 100%;
+  position: relative; }
+  .mainHeader__imgContainer {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%); }
+  .mainHeader__imgFront {
+    position: absolute;
+    top: 0;
+    right: 95px;
+    opacity: .6;
+    animation-name: moveInLeft;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out; }
+  .mainHeader__imgBack {
+    display: block; }
+  .mainHeader__bigText {
+    position: absolute;
+    right: 17.6rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 8rem;
+    font-family: dryBrush;
+    width: 50%;
+    text-align: center;
+    line-height: 8rem; }
+    .mainHeader__bigText span {
+      font-size: 5rem; }
+      .mainHeader__bigText span span {
+        font-size: 7rem; }
+
+.aboutMe {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .aboutMe__p-container {
+    font-family: font2;
+    width: 60%;
+    font-size: 3rem; }
+
+.typed-cursor {
+  color: azure;
+  font-size: 3rem;
+  animation-name: blink;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0.95, 0.05, 0.795, 0.035);
+  font-family: 'Courier New', Courier, monospace; }
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem); }
+  50% {
+    opacity: 1; }
+  90% {
+    opacity: .6; }
+  100% {
+    transform: translateX(0);
+    opacity: .6; } }
+
+@keyframes blink {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }

@@ -1,0 +1,48 @@
+.mainHeader{
+    display: block;
+    height: 100vh;
+  //  background-color: orangered; 
+    width: 100%; 
+    position: relative; 
+   
+   
+    &__imgContainer{ 
+        position: absolute; 
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    } 
+    &__imgFront{ 
+        position: absolute;
+        top: 0;  
+        right: 95px; 
+        opacity: .6;
+        animation-name: moveInLeft;
+        animation-duration: 2s;
+        animation-timing-function: ease-in-out;
+        
+  
+    }
+    &__imgBack{
+        display: block;
+        
+          
+    } 
+    &__bigText{
+        position: absolute;
+        right: 17.6rem;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 8rem;
+        font-family: dryBrush;
+        width: 50%;
+        text-align: center;
+        line-height: 8rem;
+        span{
+            font-size: 5rem;
+            span{
+                font-size: 7rem;
+            }
+        }
+    }
+}      
