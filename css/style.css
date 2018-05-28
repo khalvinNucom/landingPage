@@ -1,6 +1,5 @@
 html {
-  font-size: 62.5%;
-  overflow-x: hidden; }
+  font-size: 62.5%; }
 
 body {
   background-color: #24292e;
@@ -80,8 +79,9 @@ p, h1, h2, h3, h4, h5 {
   overflow-x: hidden;
   overflow-y: hidden;
   position: relative;
-  background-color: white;
   width: 100%;
+  margin-top: 10rem;
+  background-color: white;
   transform: skewY(3deg); }
   .skills > * {
     transform: skewY(-3deg); }
@@ -112,23 +112,24 @@ p, h1, h2, h3, h4, h5 {
     display: inline-block;
     padding-bottom: 1rem; }
   .skills__icons [class*=devicon-] {
-    font-size: 8rem; }
+    font-size: 8rem;
+    color: #0c0c0c14 !important; }
   .skills__icons {
     display: flex;
     align-items: center;
-    margin-top: -4.5rem; }
+    margin-top: -4.5rem;
+    top: -5rem;
+    position: absolute;
+    right: -45rem;
+    z-index: -3; }
   .skills__icons > * {
     display: grid; }
   .skills__icons > * > * {
     margin: 3rem; }
-  .skills__icons {
-    position: absolute;
-    right: -42rem;
-    z-index: -3; }
   .skills__psdToHtml {
-    background-color: red;
-    height: 10rem;
-    width: 100%; }
+    margin-bottom: 10rem !important;
+    display: flex;
+    justify-content: space-evenly; }
 
 @keyframes moveInLeft {
   0% {
@@ -153,6 +154,9 @@ p, h1, h2, h3, h4, h5 {
 .marginAll {
   margin: 10rem; }
 
+.marginAllSmall {
+  margin: 3rem; }
+
 .marginBottom {
   margin-bottom: 10rem; }
 
@@ -173,15 +177,17 @@ p, h1, h2, h3, h4, h5 {
 
 .barContainer {
   height: 2rem;
-  width: 35rem;
+  width: 51rem;
   position: relative;
-  border-right: 2px white solid; }
+  border-right: 2px #7e7e8a solid;
+  border-bottom: 2px #7e7e8a solid;
+  border-bottom-left-radius: 6px; }
   .barContainer:after {
     content: attr(data-content);
     position: absolute;
     right: -25px;
     top: 1px;
-    color: blue;
+    color: #7e7e8a;
     font-size: 1.3rem;
     transform: rotate(-90deg); }
   .barContainer .bar {

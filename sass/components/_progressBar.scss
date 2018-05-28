@@ -1,14 +1,16 @@
  .barContainer{
     height: 2rem;
-    width: 35rem;
+    width: 51rem;
     position: relative;
-    border-right: 2px white solid;
+    border-right: 2px #7e7e8a solid;
+    border-bottom: 2px #7e7e8a solid;
+    border-bottom-left-radius: 6px;
         &:after{
             content:attr(data-content);
             position: absolute;
             right: -25px;
             top: 1px;
-            color: blue;
+            color: #7e7e8a;;
             font-size: 1.3rem;
             transform: rotate(-90deg);
             //font-family: 'Courier New';

@@ -31,8 +31,9 @@
     overflow-x: hidden;
     overflow-y: hidden;
     position: relative;
-    background-color: white;
     width: 100%;
+    margin-top: 10rem;
+    background-color: white;
     transform: skewY(3deg);
 
     & > *{
@@ -78,30 +79,33 @@
     }
     &__icons [class*=devicon-]{
         font-size: 8rem;
-    }
+        color: #0c0c0c14 !important;    }
 
     &__icons{
         display: flex;
         align-items: center;
-        margin-top: -4.5rem;    }
+        margin-top: -4.5rem;  
+        top: -5rem;
+        position: absolute;
+        right: -45rem;
+        z-index: -3;
+      }
 
     &__icons > *{
         display:grid;
     }
     &__icons >*>*{
         margin: 3rem;
+        
     }
-    &__icons{
-        position: absolute;
-        right: -42rem;
-        z-index: -3;
-    }
+   
     &__psdToHtml{
-        background-color: red;
-        height: 10rem;
-        width: 100%;
-
+        //background-color: red;
+        margin-bottom: 10rem !important;
+        display: flex;
+        justify-content: space-evenly;
     }
+   
   
     
 }
