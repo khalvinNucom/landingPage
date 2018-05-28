@@ -1,7 +1,17 @@
 
 
 @import "base/base";
+@import "abstracts/variables"; 
 @import "base/typography"; 
-@import "layout/header"; 
-@import "layout/sections"; 
-@import "base/animations"  
+@import "layout/header";     
+@import "layout/sections";    
+@import "base/animations";       
+@import "base/utilities" ;   
+@import "layout/footer";
+@import "components/progressBar";
+
+
+
+
+   
+  

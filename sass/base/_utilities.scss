@@ -1,0 +1,25 @@
+.marginAll{
+    margin: 10rem;
+}
+.marginBottom{
+    margin-bottom: 10rem;
+}
+.marginTop{
+    margin-bottom: 10rem;
+}
+
+.marginButtomNotLast>*:not(:last-child){
+    margin-bottom: 2rem;
+}
+.marginLeftNotFirst>*:not(:first-child){
+    margin-left: 3rem;
+}
+
+.gradientText{
+    background-image: linear-gradient(to right,$secondary-color, $primary-color);
+   // background-image: linear-gradient(142deg, #aa076b 20%,#aa076b 20%, #61045f 0%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+
+} 

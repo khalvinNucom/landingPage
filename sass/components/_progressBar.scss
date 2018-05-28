@@ -1,0 +1,29 @@
+ .barContainer{
+    height: 2rem;
+    width: 35rem;
+    position: relative;
+    border-right: 2px white solid;
+        &:after{
+            content:"100%";
+            position: absolute;
+            right: -25px;
+            top: 1px;
+            color: blue;
+            font-size: 1.3rem;
+            transform: rotate(-90deg);
+            //font-family: 'Courier New';
+        }
+    .bar{
+        border-radius: 5px;
+        line-height: 1.8rem;
+        text-align: center;
+        height: 100%;
+        font-size: 1.5rem;
+        //background-color: orangered; 
+
+         &--violetGrad{
+             background-image: linear-gradient(to right, $secondary-color,$primary-color);
+
+        }
+    }  
+ } 
