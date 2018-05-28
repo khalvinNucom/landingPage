@@ -46,19 +46,24 @@
     } 
 
     &__right1 .bar{
-        width: 80%;
+        width: 0%;
     }
     &__right2 .bar{
-        width: 70%;
+        width: 0%;
     }
     &__right3 .bar{
-        width: 70%;
+        width: 0%;
     }
     &__right4 .bar{
-        width: 70%;
+        width: 0%;
     }
     &__right5 .bar{
-        width: 80%;
+        width: 0%;
+    }
+    &__progressContainer [class*=devicon-] {
+        font-size: 5rem;
+        transform: translateY(1.9rem);
+        display: inline-block;
     }
   
     

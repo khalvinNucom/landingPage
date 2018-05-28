@@ -3,7 +3,7 @@ html {
 
 body {
   background-color: #24292e;
-  background-image: url("../../assets/img/star-bg.png");
+  background-image: url("../assets/img/star-bg.png");
   background-size: cover;
   background-position: bottom;
   color: #f8f8f8; }
@@ -14,11 +14,11 @@ p, h1, h2, h3, h4, h5 {
 
 @font-face {
   font-family: dryBrush;
-  src: url(../../assets/fonts/DryBrush.ttf); }
+  src: url(../assets/fonts/DryBrush.ttf); }
 
 @font-face {
   font-family: font2;
-  src: url(../../assets/fonts/IndieFlower.ttf); }
+  src: url(../assets/fonts/IndieFlower.ttf); }
 
 .mainHeader {
   display: block;
@@ -89,20 +89,24 @@ p, h1, h2, h3, h4, h5 {
   .skills__progressContainer {
     padding: 5rem 15rem; }
   .skills__right1 .bar {
-    width: 80%; }
+    width: 0%; }
   .skills__right2 .bar {
-    width: 70%; }
+    width: 0%; }
   .skills__right3 .bar {
-    width: 70%; }
+    width: 0%; }
   .skills__right4 .bar {
-    width: 70%; }
+    width: 0%; }
   .skills__right5 .bar {
-    width: 80%; }
+    width: 0%; }
+  .skills__progressContainer [class*=devicon-] {
+    font-size: 5rem;
+    transform: translateY(1.9rem);
+    display: inline-block; }
 
 @keyframes moveInLeft {
   0% {
     opacity: 0;
-    transform: translateX(10rem); }
+    transform: translateX(12rem); }
   50% {
     opacity: 1; }
   90% {
