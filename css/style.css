@@ -1,5 +1,6 @@
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  overflow-x: hidden; }
 
 body {
   background-color: #24292e;
@@ -76,6 +77,10 @@ p, h1, h2, h3, h4, h5 {
   font-family: 'Courier New', Courier, monospace; }
 
 .skills {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  position: relative;
+  background-color: white;
   width: 100%;
   transform: skewY(3deg); }
   .skills > * {
@@ -116,6 +121,14 @@ p, h1, h2, h3, h4, h5 {
     display: grid; }
   .skills__icons > * > * {
     margin: 3rem; }
+  .skills__icons {
+    position: absolute;
+    right: -42rem;
+    z-index: -3; }
+  .skills__psdToHtml {
+    background-color: red;
+    height: 10rem;
+    width: 100%; }
 
 @keyframes moveInLeft {
   0% {

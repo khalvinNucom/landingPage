@@ -28,7 +28,10 @@
 //skill section ------------------------------------------------------------
 
 .skills{
-    //background-color: white;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: relative;
+    background-color: white;
     width: 100%;
     transform: skewY(3deg);
 
@@ -87,6 +90,17 @@
     }
     &__icons >*>*{
         margin: 3rem;
+    }
+    &__icons{
+        position: absolute;
+        right: -42rem;
+        z-index: -3;
+    }
+    &__psdToHtml{
+        background-color: red;
+        height: 10rem;
+        width: 100%;
+
     }
   
     
