@@ -76,7 +76,10 @@ p, h1, h2, h3, h4, h5 {
   font-family: 'Courier New', Courier, monospace; }
 
 .skills {
-  width: 100%; }
+  width: 100%;
+  transform: skewY(3deg); }
+  .skills > * {
+    transform: skewY(-3deg); }
   .skills__title {
     font-size: 9rem;
     text-transform: uppercase;
@@ -87,7 +90,7 @@ p, h1, h2, h3, h4, h5 {
   .skills [class^=skills_progressBar] > * {
     display: inline-block; }
   .skills__progressContainer {
-    padding: 5rem 15rem; }
+    padding: 5rem 0 5rem 15rem; }
   .skills__right1 .bar {
     width: 0%; }
   .skills__right2 .bar {
@@ -99,9 +102,20 @@ p, h1, h2, h3, h4, h5 {
   .skills__right5 .bar {
     width: 0%; }
   .skills__progressContainer [class*=devicon-] {
-    font-size: 5rem;
-    transform: translateY(1.9rem);
-    display: inline-block; }
+    font-size: 3.5rem;
+    transform: translateY(1rem);
+    display: inline-block;
+    padding-bottom: 1rem; }
+  .skills__icons [class*=devicon-] {
+    font-size: 8rem; }
+  .skills__icons {
+    display: flex;
+    align-items: center;
+    margin-top: -4.5rem; }
+  .skills__icons > * {
+    display: grid; }
+  .skills__icons > * > * {
+    margin: 3rem; }
 
 @keyframes moveInLeft {
   0% {
@@ -150,7 +164,7 @@ p, h1, h2, h3, h4, h5 {
   position: relative;
   border-right: 2px white solid; }
   .barContainer:after {
-    content: "100%";
+    content: attr(data-content);
     position: absolute;
     right: -25px;
     top: 1px;

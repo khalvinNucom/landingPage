@@ -12,7 +12,7 @@ $( document ).ready(function() {
         loop: true,
       });
     //typed-----------------------------------------------------------
-    move('.skills__right1', 89);
+    move('.skills__right1', 81);
     move('.skills__right2', 80);
     move('.skills__right3', 75);
     move('.skills__right4', 75);
@@ -27,10 +27,12 @@ $( document ).ready(function() {
         function frame() {
           if (width >= perc) {
             clearInterval(id);
+            
           } else {
             width++; 
             elem.style.width = width + '%'; 
-            elem.innerHTML = width * 1  + '%';
+            //elem.innerHTML = width * 1  + '%';
+            $(className+' .barContainer').attr('data-content', width* 1  + '%');
           }
         }
       }

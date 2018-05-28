@@ -4,7 +4,7 @@
     position: relative;
     border-right: 2px white solid;
         &:after{
-            content:"100%";
+            content:attr(data-content);
             position: absolute;
             right: -25px;
             top: 1px;
