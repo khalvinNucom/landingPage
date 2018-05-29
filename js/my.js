@@ -49,7 +49,7 @@ function moveBackground() {
   x += (lFollowX - x) * friction;
   y += (lFollowY - y) * friction;
   
-  translate = 'translate(' + x + 'px, ' + y + 'px) scale(2.2)';
+  translate = 'translate(' + x + 'px, ' + y + 'px) scale(2.2) skew(-3deg)';
 
   $('.skills__icons').css({
     '-webit-transform': translate,

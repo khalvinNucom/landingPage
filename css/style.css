@@ -118,18 +118,59 @@ p, h1, h2, h3, h4, h5 {
     display: flex;
     align-items: center;
     margin-top: -4.5rem;
-    top: -5rem;
+    top: 17rem;
     position: absolute;
-    right: -45rem;
+    right: 14rem;
     z-index: -3; }
   .skills__icons > * {
     display: grid; }
   .skills__icons > * > * {
     margin: 3rem; }
   .skills__psdToHtml {
-    margin-bottom: 10rem !important;
+    margin: 11rem 1rem 0 1rem;
+    padding-bottom: 17rem;
     display: flex;
     justify-content: space-evenly; }
+  .skills__imgContainer img {
+    width: 100%; }
+  .skills__imgContainer {
+    position: relative; }
+  .skills__imgContainer:nth-child(1):after {
+    content: "psd";
+    background-image: linear-gradient(to right, #61045f, #aa076b);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: absolute;
+    top: 7px;
+    left: -77px;
+    transform: rotate(-90deg);
+    font-size: 5.6rem;
+    text-transform: uppercase; }
+  .skills__imgContainer:nth-child(2):after {
+    content: "markup";
+    background-image: linear-gradient(to right, #61045f, #aa076b);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: absolute;
+    top: 72px;
+    left: -136px;
+    transform: rotate(-90deg);
+    font-size: 5.6rem;
+    text-transform: uppercase; }
+  .skills__imgContainer:nth-child(3):after {
+    content: "responsive";
+    background-image: linear-gradient(to right, #61045f, #aa076b);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: absolute;
+    top: 113px;
+    left: -182px;
+    transform: rotate(-90deg);
+    font-size: 5.6rem;
+    text-transform: uppercase; }
 
 @keyframes moveInLeft {
   0% {

@@ -1,0 +1,13 @@
+@mixin RotatedName ($textHere,$top,$left ){
+    content: $textHere;
+    background-image: linear-gradient(to right, #61045f, #aa076b);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: absolute;
+    top: $top;
+    left: $left;
+    transform: rotate(-90deg) scale(2.2);
+    font-size: 5.6rem;
+    text-transform: uppercase; 
+}

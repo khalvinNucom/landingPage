@@ -82,12 +82,13 @@
         color: #0c0c0c14 !important;    }
 
     &__icons{
+        //transform: skewY(-3deg);
         display: flex;
         align-items: center;
         margin-top: -4.5rem;  
-        top: -5rem;
+        top: 17rem;
         position: absolute;
-        right: -45rem;
+        right: 14rem;
         z-index: -3;
       }
 
@@ -101,11 +102,28 @@
    
     &__psdToHtml{
         //background-color: red;
-        margin-bottom: 10rem !important;
+        margin: 11rem 1rem 0 1rem;
+        padding-bottom: 17rem; 
         display: flex;
         justify-content: space-evenly;
+
     }
-   
+    &__imgContainer img{    
+        width: 100%;
+    }
+    &__imgContainer{
+        position: relative;
+    }
+    &__imgContainer:nth-child(1):after{
+        @include RotatedName ('psd',7px,-77px);
+    }
+    &__imgContainer:nth-child(2):after{
+        @include RotatedName ('markup',72px,-136px);
+    }
+    &__imgContainer:nth-child(3):after{
+        @include RotatedName ('responsive',113px,-182px);
+    }
+
   
     
 }
