@@ -198,62 +198,59 @@ p, h1, h2, h3, h4, h5 {
   .skills__imgContainer:hover::after {
     transform: rotate(-90deg) scale(2.2); }
 
-.wordpress__title {
-  font-size: 3rem;
-  text-align: center;
+.wordpress {
+  font-size: 1.7rem;
   font-family: raleway-l; }
-
-.wordpress__row1 > * {
-  padding: 0; }
-
-.wordpress__row1 div:nth-child(2) {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem; }
-
-.wordpress__row2 > * {
-  padding: 0; }
-
-.wordpress__row2 div:nth-child(1) {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem; }
-
-.wordpress__row1 .wordpress__imgContainer img {
-  width: 100%; }
-
-.wordpress__row1 .wordpress__imgContainer:after {
-  content: "backend";
-  position: absolute;
-  text-align: center;
-  font-weight: 700;
-  opacity: .2;
-  top: 300px;
-  left: -16px;
-  z-index: -1;
-  transform: rotate(-90deg);
-  font-size: 77px;
-  text-transform: uppercase;
-  transform-origin: left; }
-
-.wordpress__row2 .wordpress__imgContainer img {
-  width: 100%; }
-
-.wordpress__row2 .wordpress__imgContainer:after {
-  content: "frontend";
-  position: absolute;
-  text-align: center;
-  font-weight: 700;
-  opacity: .2;
-  top: 356px;
-  left: -16px;
-  z-index: -1;
-  transform: rotate(-90deg);
-  font-size: 77px;
-  text-transform: uppercase;
-  transform-origin: left; }
+  .wordpress__title {
+    font-size: 3rem;
+    text-align: center;
+    font-family: raleway-l; }
+  .wordpress__row1 > * {
+    padding: 0; }
+  .wordpress__row1 div:nth-child(2) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2.5rem;
+    text-align: center; }
+  .wordpress__row2 > * {
+    padding: 0; }
+  .wordpress__row2 div:nth-child(1) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2.5rem;
+    text-align: center; }
+  .wordpress__row1 .wordpress__imgContainer img {
+    width: 100%; }
+  .wordpress__row1 .wordpress__imgContainer:after {
+    content: "backend";
+    position: absolute;
+    text-align: center;
+    font-weight: 700;
+    opacity: .2;
+    top: 300px;
+    left: -16px;
+    z-index: -1;
+    transform: rotate(-90deg);
+    font-size: 77px;
+    text-transform: uppercase;
+    transform-origin: left; }
+  .wordpress__row2 .wordpress__imgContainer img {
+    width: 100%; }
+  .wordpress__row2 .wordpress__imgContainer:after {
+    content: "frontend";
+    position: absolute;
+    text-align: center;
+    font-weight: 700;
+    opacity: .2;
+    top: 356px;
+    left: -16px;
+    z-index: -1;
+    transform: rotate(-90deg);
+    font-size: 77px;
+    text-transform: uppercase;
+    transform-origin: left; }
 
 @keyframes moveInLeft {
   0% {

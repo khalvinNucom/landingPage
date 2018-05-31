@@ -141,6 +141,8 @@
 }
 
 .wordpress{
+    font-size: 1.7rem;
+    font-family: raleway-l;
     &__title{
         font-size: 3rem;
         text-align: center;
@@ -159,7 +161,8 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 1rem;
+            padding: 2.5rem;
+            text-align: center;
         }
         
     }
@@ -171,7 +174,8 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 1rem;
+            padding: 2.5rem;
+            text-align: center;
         }
         
     }
