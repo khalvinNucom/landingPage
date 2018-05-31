@@ -141,6 +141,7 @@
 }
 
 .wordpress{
+    padding-bottom: 20rem;
     font-size: 1.7rem;
     font-family: raleway-l;
     &__title{
@@ -179,6 +180,11 @@
         }
         
     }
+    &__imgContainer{
+        img{
+            box-shadow:2rem 2rem 2rem rgba(0, 0, 0, 0.2)
+        }
+    }
    &__row1 &__imgContainer{
         
        img{
@@ -186,7 +192,7 @@
        } 
        &:after{
         @include RotatedName-wordpress ('backend',300px);
-    }
+       }
    }
    &__row2 &__imgContainer{
         
@@ -197,8 +203,6 @@
      @include RotatedName-wordpress ('frontend',356px);
  }
 }
-   
-
 }
 
 
