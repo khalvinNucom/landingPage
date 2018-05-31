@@ -1,13 +1,36 @@
-@mixin RotatedName ($textHere,$top,$left ){
+@mixin RotatedName ($textHere){
     content: $textHere;
-    background-image: linear-gradient(to right, #61045f, #aa076b);
+    background-image: linear-gradient(to right, #61045f, #aa076b); 
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     position: absolute;
+    text-align: center;
+    font-family: raleway-l;
+    top: 300px;
+    left: -16px;
+    z-index: -1;
+    transform: rotate(-90deg);
+    font-size: 22px;
+    text-transform: uppercase;
+    transform-origin: left;
+}
+
+@mixin RotatedName-wordpress ($textHere ,$top){
+    content: $textHere;
+    // background-image: linear-gradient(to right, #61045f, #aa076b); 
+    // -webkit-background-clip: text;
+    // -moz-background-clip: text;
+    // -webkit-text-fill-color: transparent;
+    position: absolute;
+    text-align: center;
+    font-weight: 700;
+    opacity: .2;
     top: $top;
-    left: $left;
-    transform: rotate(-90deg) scale(2.2);
-    font-size: 5.6rem;
-    text-transform: uppercase; 
+    left: -16px;
+    z-index: -1;
+    transform: rotate(-90deg);
+    font-size: 77px;
+    text-transform: uppercase;
+    transform-origin: left;
 }

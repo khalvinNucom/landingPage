@@ -6,7 +6,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    &__p-container{
+    &__p-container{ 
         height:9rem;
         font-family: font2;
         width: 60%;
@@ -114,18 +114,87 @@
     &__imgContainer{
         position: relative;
     }
+    &__imgContainer:after{
+        position: relative;
+        transition: transform .2s cubic-bezier(0.075, 0.82, 0.165, 1);
+        // backface-visibility: hidden; 
+         -webkit-font-smoothing: subpixel-antialiased;
+        // transform: translateZ(0);
+    }
+    
     &__imgContainer:nth-child(1):after{
-        @include RotatedName ('psd',7px,-77px);
+        @include RotatedName ('psd');  //pag nag hover dito dapat lalaki ng ganto pero ang orig maliit lang .. orayyyt ba???
     }
     &__imgContainer:nth-child(2):after{
-        @include RotatedName ('markup',72px,-136px);
+        @include RotatedName ('markup');
     }
     &__imgContainer:nth-child(3):after{
-        @include RotatedName ('responsive',113px,-182px);
+        @include RotatedName ('responsive');
+    }
+
+    &__imgContainer:hover::after{
+        transform:rotate(-90deg) scale(2.2);  
     }
 
   
     
+}
+
+.wordpress{
+    &__title{
+        font-size: 3rem;
+        text-align: center;
+        font-family: raleway-l;
+        
+       //text-transform: uppercase;
+    }
+    &__wp{
+
+    }
+    &__row1{
+        &>*{
+            padding: 0;
+        }
+        div:nth-child(2){
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+        }
+        
+    }
+    &__row2{
+        &>*{
+            padding: 0;
+        }
+        div:nth-child(1){
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+        }
+        
+    }
+   &__row1 &__imgContainer{
+        
+       img{
+        width: 100%;
+       } 
+       &:after{
+        @include RotatedName-wordpress ('backend',300px);
+    }
+   }
+   &__row2 &__imgContainer{
+        
+    img{
+     width: 100%;
+    } 
+    &:after{
+     @include RotatedName-wordpress ('frontend',356px);
+ }
+}
+   
+
 }
 
 
